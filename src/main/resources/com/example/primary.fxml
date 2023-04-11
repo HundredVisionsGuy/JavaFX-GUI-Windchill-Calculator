@@ -9,7 +9,7 @@
 
 <VBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PrimaryController" spacing="10" alignment="TOP_CENTER">
    <padding>
-      <Insets top="10" left="20" />
+      <Insets top="20" left="20" bottom="15" right="20" />
    </padding>
    <children>
       <Text text="Wind Chill Calculator">
@@ -17,22 +17,21 @@
             <Font name="Arial Black" size="24.0" />
          </font>
       </Text>
-      <HBox>
+      <HBox VBox.vgrow="ALWAYS">
          <children>
-            <VBox HBox.hgrow="ALWAYS" alignment="CENTER" spacing="10">
+            <VBox HBox.hgrow="ALWAYS" alignment="CENTER" spacing="30">
                <children>
-                     <Label text="VBox 1 Label 2" />
-                     <Button text="Sign In" onAction="#switchToSecondary"/>
+                  <Label text="VBox left hand label" />
+                  <Button text="Switch Screens" onAction="#switchToSecondary"/>
                </children>
             </VBox>
             <VBox HBox.hgrow="ALWAYS" alignment="CENTER" spacing="10">
                <children>
-                     <Label text="VBox 2 Label 1" />
-                     <Label text="VBox 2 Label 2" />
+                     <Label text="Right Side Label 1" />
+                     <Label text="Right Side Label 2" />
                </children>
             </VBox>
          </children>
       </HBox>
    </children>
 </VBox>
-
